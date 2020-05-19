@@ -19,9 +19,9 @@ Now, it's just a matter of looping through the pixels of the image and classifyi
 
 In the end, we use some pretty matplotlib code to display the distribution of colors with a respectively colored bar graph.
 
-#Usage
+# Usage
 `python image_detector.py **YOUR_IMAGE_FILE** NUM_PARTITIONS`
 
-#Example
+# Example
 `python image_detector.py train.jpg 5`
 This will result in 3^5=243 different partitions of the color space.
