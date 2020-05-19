@@ -7,11 +7,11 @@ Many years ago, I thought about how I could take an image, read the pixels, and 
 Years later, using a more mathematical approach, I came up with this idea.
 In normal 8-bit image storage like in a JPEG or PNG file, there are 3 axes, R, G, and B that define a color. We can think of these axes just like a normal 3-dimensional basis, think the X,Y, and Z axes in any 3d modelling software.
 
-![Basis.png](Our 3-dimensional normal basis)
+![/imgs/Basis.png](Our 3-dimensional normal basis)
 
 Now, we can just imagine our pixel color as some point in the cube = { (r,g,b) s.t. [0<=value<256 for value in (r,g,b)] }.
 
-![Color_Space.png)(Our 3-dimensional color space)
+![/imgs/Color_Space.png)(Our 2-dimensional color space)
 Obviously, we are asking a question about an (almost) continuous space. There are 3^256 isolated points that are unique colors in this cube.
 To fix this, we need to associate similar colors into the same "class". To do this is simple, though. We simply need to partition this cube up into n different classes per axis. In the case of n=3, we are making three distinct thresholds that divide the classes in each axis. This will look just like a Rubic's Cube! In a general case of n partitions per axis, we will get 3^n total partitions in our space.
 
