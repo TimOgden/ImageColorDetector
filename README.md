@@ -1,6 +1,12 @@
 # ImageColorDetector
 Simple algorithm to sort every pixel of an image into a certain partition of the 3 dimensional RGB color space and see its distribution.
 
+Example Input:
+![Example input](/imgs/example_img.png)
+
+Example Output:
+![Example output](/img/example_graph.png)
+
 # Explanation
 Many years ago, I thought about how I could take an image, read the pixels, and return the most frequent color that I see. In my naivety, I began defining "classes" of color with a lot of difficulty. For example, the color "green" would be when the g-value was above some high threshold and the r and b values were below a low threshold. The difficulties here is that defining each color is painstaking, especially when it's not a primary color, such as purple or orange, and mistakes were bountiful. Another drawback to this approach is the fact that I only have a set amount of color classes that a pixel can fall in, and making more or less would be laborious.
 
