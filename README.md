@@ -1,10 +1,8 @@
 # ImageColorDetector
 Simple algorithm to sort every pixel of an image into a certain partition of the 3 dimensional RGB color space and see its distribution.
 
-Example Input:
 ![Example input](/imgs/example_img.png)
 
-Example Output:
 ![Example output](/imgs/example_graph.png)
 
 # Explanation
